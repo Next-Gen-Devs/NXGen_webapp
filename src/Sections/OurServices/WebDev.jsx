@@ -12,7 +12,7 @@ const WebDev = ({ isOpen, onClose, title, content }) => {
         <button className="close-button" onClick={onClose}>
           X
         </button>
-        <h1 className="title">{title}</h1>
+        <h1 className="title">Web Development</h1>
         <div className="content">
           {content}
         </div>
