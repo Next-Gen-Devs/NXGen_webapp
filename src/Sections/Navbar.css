@@ -41,6 +41,15 @@
     font-size: 20px;
     cursor: pointer;
     z-index: 2;
+    transition: transform 1.3s ease;
+  }
+
+  .menuIcon {
+    transition: transform 1.0s ease; /* Added transition for smooth effect */
+  }
+  
+  .mobileMenuOpen .menuIcon {
+    transform: rotate(180deg); /* Rotate the icon when the menu is open */
   }
 
   .navList {

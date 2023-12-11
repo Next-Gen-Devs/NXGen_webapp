@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoCloseOutline } from 'react-icons/io5';
 
 function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -23,7 +24,11 @@ function Navbar() {
   return (
     <div className="navbarContainer">
       <div className="mobileMenuButton" onClick={toggleMobileMenu}>
-      <RxHamburgerMenu  color='white'/>
+        {isMobileOpen ? (
+          <IoCloseOutline color="white" />
+        ) : (
+          <RxHamburgerMenu color="white" />
+        )}
       </div>
       <ul className={`navList ${isMobileOpen ? 'mobileMenuOpen' : ''}`}>
         <li onClick={() => scrollToSection('section1')}>OUR VISION</li>
