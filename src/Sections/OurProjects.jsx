@@ -19,7 +19,7 @@ function OurProjects() {
   };
 
   const closeWebDevModal = () => {
-    setIsWebDevModalOpen(false);
+    setIsWebDevModalOpen(false) ;
   };
 
   const services = [
