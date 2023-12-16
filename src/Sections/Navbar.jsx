@@ -30,12 +30,15 @@ function Navbar() {
           <RxHamburgerMenu color="white" />
         )}
       </div>
+      <div className='navList-container'>
       <ul className={`navList ${isMobileOpen ? 'mobileMenuOpen' : ''}`}>
         <li onClick={() => scrollToSection('section1')}>OUR VISION</li>
         <li onClick={() => scrollToSection('section2')}>SERVICES</li>
         <li onClick={() => scrollToSection('section3')}>OUR TEAM</li>
         <li onClick={() => scrollToSection('section4')}>CONTACT US</li>
+        
       </ul>
+      </div>
     </div>
   );
 }

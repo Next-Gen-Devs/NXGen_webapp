@@ -32,7 +32,13 @@
   display: none; /* Hide the hamburger icon by default on larger screens */
 }
 
+
+
 @media (max-width: 768px) {
+  .navList-container{
+    transition: transform 0.3s ease;
+  }
+
   .mobileMenuButton {
     display: block;
     position: absolute;
@@ -41,7 +47,6 @@
     font-size: 20px;
     cursor: pointer;
     z-index: 2;
-    transition: transform 1.3s ease;
   }
 
   .menuIcon {
@@ -49,7 +54,7 @@
   }
   
   .mobileMenuOpen .menuIcon {
-    transform: rotate(180deg); /* Rotate the icon when the menu is open */
+    transform: rotate(10deg); /* Rotate the icon when the menu is open */
   }
 
   .navList {
