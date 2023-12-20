@@ -1,19 +1,13 @@
 .ourVisionContainer{
-    background-color:rgba(30, 30, 30, 1);
+    background-color: #D3D3D3; /*light grey*/
     height:80vh;
 }
 
 .visionTitle{
-    font-family: 'Bebas Neue', sans-serif;
     color:white;
     font-size: 30px;
-    -webkit-text-stroke : 0.15px black; /* Add a black stroke to the text */
-    text-shadow: 2px 2px 4px rgba(20, 171, 173, 0.5); /* Add a shadow with a color and blur */
 }
 
-.visionText{
-    color:rgba(20, 171, 173, 0.5)
-}
 
 .ourVision-body {
     display: inline-flex;
