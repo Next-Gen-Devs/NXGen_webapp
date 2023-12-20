@@ -1,4 +1,5 @@
-import Reactgit from 'react';
+import React from 'react';
+
 import './OurProjects.css';
 // import WebDev from './OurServices/WebDev';
 // import { FaArrowCircleRight } from "react-icons/fa";
