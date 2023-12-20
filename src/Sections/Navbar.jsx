@@ -44,9 +44,9 @@ function Navbar() {
     <div className={`navbarContainer ${isScrolled ? 'scrolled' : ''}`}>
       <div className="mobileMenuButton" onClick={toggleMobileMenu}>
         {isMobileOpen ? (
-          <IoCloseOutline className='closeIcon'/>
+          <IoCloseOutline className='closeIcon' size={25}/>
         ) : (
-          <RiMenu5Line className='openIcon'/>
+          <RiMenu5Line className='openIcon' size={25}/>
         )}
       </div>
       <div className={`navList ${isMobileOpen ? 'mobileMenuOpen' : ''}`}>
