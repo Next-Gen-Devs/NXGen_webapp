@@ -9,8 +9,7 @@ function OurVision() {
                 <h1 className='visionTitle'>Our <span className='visionText'>Vision</span></h1>
             </div>
             <div className='ourVision-body'>
-                left
-                right
+                <p>Your vision is our vision Were here to   make your vision into a digital reality be it a e-commerce website, a news portal or a gaming site, you name it we can make it happen. Ready to get started?</p>
             </div>
         </div>
     )
