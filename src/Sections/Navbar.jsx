@@ -46,14 +46,17 @@ function Navbar() {
         {isMobileOpen ? (
           <IoCloseOutline className='closeIcon' size={25} color='white'/>
         ) : (
-          <RiMenu5Line className='openIcon' size={25}/>
+          <RiMenu5Line className='openIcon' size={25} color='white'/>
         )}
       </div>
       <div className={`navList ${isMobileOpen ? 'mobileMenuOpen' : ''}`}>
         <ul>
           <li onClick={() => isNavListClickable() && scrollToSection('section1')}>OUR VISION</li>
+          {isMobileOpen && <hr />}
           <li onClick={() => isNavListClickable() && scrollToSection('section2')}>SERVICES</li>
+          {isMobileOpen && <hr />}
           <li onClick={() => isNavListClickable() && scrollToSection('section3')}>OUR TEAM</li>
+          {isMobileOpen && <hr />}
           <li onClick={() => isNavListClickable() && scrollToSection('section4')}>CONTACT US</li>
         </ul>
       </div>
