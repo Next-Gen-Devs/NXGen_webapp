@@ -26,7 +26,7 @@
   
   .titleContainer {
     width: -webkit-fill-available;
-    margin-right: 4dvh;
+    margin-right: 4vh;
     animation: slideIn 1s ease-out;
   }
   
@@ -35,7 +35,7 @@
     text-align: justify;
     font-family: 'Verdana', sans-serif;
     font-style: italic;
-    font-size: 2dvh;
+    font-size: 2vh;
     animation: slideIn 1s ease-out;
   }
   
