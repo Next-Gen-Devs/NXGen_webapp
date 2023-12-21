@@ -1,17 +1,47 @@
 .ourVisionContainer{
     background-color: #D3D3D3; /*light grey*/
     height:80vh;
+    display: flex;
+    padding:5dvh;
 }
 
 .visionTitle{
     color:white;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Verdana', sans-serif;
 }
 
+.titleContainer {
+    width: -webkit-fill-available;
+    margin-right:4dvh;
+}
 
 .ourVision-body {
-    display: inline-flex;
+    display: flex;
+    text-align: justify;
+    font-family: 'Verdana', sans-serif;
+    font-style: italic;
+    font-size: 2dvh;
+}
+
+.ourVision-body:hover{
+    cursor: pointer;
+}
+
+.ourVision-body:hover .centeredHr {
+    background-color: rgba(20, 171, 173); /* Opacity 0 on hover */
+    transition: background-color 0.3s ease-in-out;
   }
+
+.centeredHr {
+    border: none;
+    height: 2px; /* Adjust the thickness as needed */
+    background-color: rgba(20, 171, 173, 0.3); /* Your desired color */
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the hr horizontally */
+  }
+
+
   
   
 
