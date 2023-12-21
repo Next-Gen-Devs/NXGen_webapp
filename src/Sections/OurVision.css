@@ -1,47 +1,60 @@
-.ourVisionContainer{
-    background-color: #D3D3D3; /*light grey*/
-    height:80vh;
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px); /* Slide in from the left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .ourVisionContainer {
+    background-color: #D3D3D3; /* light grey */
+    height: 80vh;
     display: flex;
-    padding:5dvh;
-}
-
-.visionTitle{
-    color:white;
+    padding: 5dvh;
+     /* Apply the slide-in animation to the entire container */
+  }
+  
+  .visionTitle {
+    color: white;
     font-size: 25px;
     font-family: 'Verdana', sans-serif;
-}
-
-.titleContainer {
+    animation: slideIn 1s ease-out;
+  }
+  
+  .titleContainer {
     width: -webkit-fill-available;
-    margin-right:4dvh;
-}
-
-.ourVision-body {
+    margin-right: 4dvh;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .ourVision-body {
     display: flex;
     text-align: justify;
     font-family: 'Verdana', sans-serif;
     font-style: italic;
     font-size: 2dvh;
-}
-
-.ourVision-body:hover{
+    animation: slideIn 1s ease-out;
+  }
+  
+  .ourVision-body:hover {
     cursor: pointer;
-}
-
-.ourVision-body:hover .centeredHr {
+  }
+  
+  .ourVision-body:hover .centeredHr {
     background-color: rgba(20, 171, 173); /* Opacity 0 on hover */
     transition: background-color 0.3s ease-in-out;
   }
-
-.centeredHr {
+  
+  .centeredHr {
     border: none;
     height: 2px; /* Adjust the thickness as needed */
     background-color: rgba(20, 171, 173, 0.3); /* Your desired color */
     width: 50%; /* Adjust the width as needed */
     margin: 0 auto; /* Centers the hr horizontally */
+    animation: slideIn 1s ease-out;
   }
-
-
   
   
-
