@@ -13,7 +13,7 @@
     background-color: #D3D3D3; /* light grey */
     height: 80vh;
     display: flex;
-    padding: 5dvh;
+    padding: 5vh;
      /* Apply the slide-in animation to the entire container */
   }
   
@@ -51,7 +51,7 @@
   .centeredHr {
     border: none;
     height: 2px; /* Adjust the thickness as needed */
-    background-color: rgba(20, 171, 173, 0.3); /* Your desired color */
+    background-color: rgba(20, 171, 173, 0.2); /* Your desired color */
     width: 50%; /* Adjust the width as needed */
     margin: 0 auto; /* Centers the hr horizontally */
     animation: slideIn 1s ease-out;
