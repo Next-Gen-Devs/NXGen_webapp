@@ -60,10 +60,36 @@
     transition: height 0.4s ease, opacity 0.3s ease;
   }
 
-  .menuIcon {
-
-    transition: transform 1.0s ease; /* Added transition for smooth effect */
+  @keyframes rotateOut {
+    0% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
+  /* Update the transition property for the menuIcon */
+.menuIcon {
+  transition: transform 1.3s ease;
+  animation: rotateOut 0.4s ease forwards;
+}
+
+/* Add a keyframes animation for the open state */
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+/* Apply the keyframes animation for the open state */
+.menuIcon.open {
+  animation: rotateIn 0.4s ease forwards;
+}
+
+  
   
   .navList.mobileMenuOpen {
     height: 28vh;

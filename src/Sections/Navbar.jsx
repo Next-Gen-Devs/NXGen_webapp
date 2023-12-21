@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import { IoCloseOutline } from 'react-icons/io5';
-import { RiMenu5Line } from "react-icons/ri";
+import { RiMenu5Line } from 'react-icons/ri';
 
 function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -44,9 +44,9 @@ function Navbar() {
     <div className={`navbarContainer ${isScrolled ? 'scrolled' : ''}`}>
       <div className="mobileMenuButton" onClick={toggleMobileMenu}>
         {isMobileOpen ? (
-          <IoCloseOutline className='closeIcon' size={25} color='white'/>
+          <IoCloseOutline className='menuIcon open' size={30} color='white' />
         ) : (
-          <RiMenu5Line className='openIcon' size={25} color='white'/>
+          <RiMenu5Line className='menuIcon' size={30} color='white' />
         )}
       </div>
       <div className={`navList ${isMobileOpen ? 'mobileMenuOpen' : ''}`}>
