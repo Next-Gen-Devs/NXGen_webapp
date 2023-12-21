@@ -5,6 +5,7 @@ import Contact from './Sections/Contact';
 function App() {
   return (
     <div className="App">
+      
       <Cover />
       <Contact />
     </div>
