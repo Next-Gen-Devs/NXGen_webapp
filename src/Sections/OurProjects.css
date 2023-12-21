@@ -52,10 +52,6 @@
     margin-right: 165px;
 }
 
-.service:hover{
-    scale: 1.02;
-    transition: 0.3s;
-}
 
 .servicesContainer {
     display: flex;
@@ -64,60 +60,54 @@
 }
 
 
+.service-text {
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: justify;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out; /* Remove delay for opacity */
+}
+
+.service-text,
+.serviceImage {
+    transform-origin: center bottom;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Adjust the duration as needed */
+}
+
+.service:hover .service-text {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.service:hover .serviceImage {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+}
 
 
+
+.readIcon{
+    position: flex;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right
+}
+
+.readIcon:hover{
+    color: white;
+    scale: 1.06;
+    transition: 0.3s;
+}
 
 
 /* Media Query for Mobile Devices */
-@media (max-width: 2560px) {
-    .mainTextContainer {
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
-    .service {
-        position: relative;
-    top: 5%;
-    right: 8%;
-    background-color: rgba(30, 30, 30, 1);
-    text-align: center;
-    width: 10%;
-    transform: translate(95%, 15%);
-    cursor: pointer;
-    border-radius: 10px;
-    padding-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(20, 171, 173, 0.5);
-    margin-bottom: 60px;
-    margin-right: 165px;
-    }
-}
-
-
-@media (max-width: 1440px) {
-    .mainTextContainer {
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
-    .service {
-        position: relative;
-    top: 5%;
-    right: 15%;
-    width: 20%;
-    padding: 20px;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-left: 50px;
-    margin-right: 300px;
-
-    }
-}
-
 
 @media (max-width: 768px) {
+    .projectsContainer{
+        height:100%;
+      }
+
     .mainTextContainer {
         margin-left: 5vh;
         margin-right: 5vh;
@@ -158,46 +148,3 @@
     }
 }
 
-@media (max-width: 375px) {
-    .mainTextContainer {
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
-    .service{
-        position: relative;
-        top:5%;
-        left:-53%;
-        width: 60%;
-        padding-bottom: 20px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 0px;
-    }
-}
-
-@media (max-width: 320px) {
-    .mainTextContainer {
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
-    .service{
-        position: relative;
-        top:5%;
-        left:-70%;
-        width: 60%;
-        padding-bottom: 20px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 0px;
-    }
-}
-
-
-
-@media (max-width: 2560px) {
-  .projectsContainer{
-    height:50%;
-  }
-}
